@@ -1,0 +1,11 @@
+/* Подключаем Tailwind CSS — готовые классы оформления (p-4, bg-blue-500, rounded-lg и т.д.) */
+/* Берём только сами классы, без сброса стандартных стилей браузера */
+@layer theme, base, components, utilities; /* порядок слоёв стилей */
+@import "tailwindcss/theme.css" layer(theme); /* цвета, размеры, шрифты Tailwind */
+@import "tailwindcss/utilities.css" layer(utilities); /* сами классы: p-4, flex, text-xl ... */
+
+body { /* вся страница */
+  font-family: Arial, sans-serif; /* обычный шрифт без засечек */
+  background: white; /* белый фон (даже если в системе тёмная тема) */
+  color: black; /* чёрный текст */
+} /* конец стиля для body */
